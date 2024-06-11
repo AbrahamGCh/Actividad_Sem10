@@ -36,10 +36,7 @@ def saludo(request):
     return HttpResponse(layout + mensaje)
 
 def index(request):
-    mensaje="""
-        <h1>Inicio</h1>
-    """
-    return HttpResponse(layout + mensaje)
+    return render(request,"index.html")
 
 def rango(request):
     a=10
